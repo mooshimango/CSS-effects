@@ -1,0 +1,69 @@
+body { 
+    margin: 0; /* Remove the default margin */
+    background: #3297bf;
+background: linear-gradient(90deg, rgba(50, 151, 191, 1) 0%, rgba(87, 199, 133, 1) 26%, rgba(237, 221, 83, 1) 91%);
+}
+
+#image-row { 
+    /* Use flexbox to arrange the images in a row */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+img { 
+    /* Prevent images from exceeding the width of their parent */
+    max-width: 100%;
+    height: auto;
+}
+
+
+#img-row :hover {
+  filter: blur(0px);
+  filter: brightness(0%);
+  filter: contrast(0%);
+  filter: grayscale(0%);
+  transition: 500ms;
+}
+
+#img-A {
+    filter: blur(4px);
+}
+
+#img-B {
+    filter: contrast(200%);
+}
+
+#img-C {
+    filter: brightness(200%);
+}
+#img-D {
+    filter: grayscale(100%);
+}
+
+#click-me {
+    /* Centre the button */
+    display: block;
+    margin: auto;
+    
+
+    /* Style the button to look nice */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    box-shadow: 10px 10px 5px blue;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#click-me:hover {
+    /* Change the button colour on hover */
+    background-color: rgb(250, 18, 18);
+    color: black;
+    transition: 500ms;
+    transform: rotate(360deg);
+}
+
+
